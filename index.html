@@ -12,36 +12,73 @@
       <div class="jumbotron">
         <h2>Plant Based Pizza:</h2>
       </div>
-
-          <form id="orderForm">
-             <h3>Pizza size:</h3>
+        <h3>Welcome to Plant Based Pizza.</h3>
+        <h6>All of our crusts use a vegan dough and our sauces are all locally sourced. We believe in guilt free pizza, and if you do to, order below!</h6>
+          <br><div class="well" id="gradient">
+             <h3>First Select a Size:</h3>
+             <p>Personal: feeds 1 person</p>
+             <p>Small: feeds 2 people</p>
+             <p>Medium: feeds 2-3 people</p>
+             <p>Large: feeds 3-4 people</p>
+          </div><br>
+            <form id="orderForm">
              <select class="form-control"id="size">
                <option value="blank">Select Size...</option>
                <option value="personal">Personal $7</option>
                <option value="small">Small $9</option>
                <option value="medium">Medium $11</option>
                <option value="large">Large $13</option>
-             </select>
+             </select><br><br>
 
-            <br><div class="pizzaToppings">
-                <h4>Choose your toppings: $2.00 each</h4>
+          <div class="pizzaToppings">
+            <h4>Choose your toppings:</h4>
+            <p>In order to mantain quality, we have raised our prices to $3.00 per topping</p>
+            <div class="row">
+              <div class="col-md-4">
+                <br>
                 <input type="radio" value="olives">
                 <label for="toppings">Olives</label>
                 <br>
-                <input type="radio" value="pepperoni">
-                <label for="toppings">Pepperoni</label>
+                <input type="radio" value="spinach">
+                <label for="toppings">Spinach</label>
+                <br>
+                <input type="radio" value="vegancheeze">
+                <label for="toppings">Vegan Cheeze</label>
+              </div>
+              <div class="col-md-4">
+                <br>
+                <input type="radio" value="tomatoes">
+                <label for="toppings">Roma Tomatoes</label>
+                <br>
+                <input type="radio" value="artichoke">
+                <label for="toppings">Artichokes</label>
                 <br>
                 <input type="radio" value="greenpeppers">
                 <label for="toppings">Green Peppers</label>
-            </div>
+              </div>
+              <div class="col-md-4">
+                <br>
+                <input type="radio" value="pineapple">
+                <label for="toppings">Pineapple</label>
+                <br>
+                <input type="radio" value="broccoli">
+                <label for="toppings">Broccoli</label>
+                <br>
+                <input type="radio" value="redonions">
+                <label for="toppings">Red Onions</label>
+              </div>
+          </div>
 
+        </div>
+          <div class="button">
             <br><button type="submit" class="btn btn-danger">Order:</button>
+          </div>
           </form>
 
 
 
       <div class="price">
-        <div class="form-check">
+        <div class="well" id="gradient2">
           <br><h6>Order total cost:</h6>
           <br><ul id="pizzaReciept">
 

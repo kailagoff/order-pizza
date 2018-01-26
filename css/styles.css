@@ -1,11 +1,36 @@
 .jumbotron {
   background-image: url(http://cdn.skim.gs/image/upload/v1456338406/msi/minimalist_baker_vegan_pizza_yi4ew7.jpg);
   background-size: cover;
+  background-position: center;
   text-align: center;
   font-family: "Lucida Console", Monaco, monospace;
   padding: 50px;
   margin-top: 30px;
   color: white;
-
+  text-shadow: 2px 3px black;
 }
-/* #3A80A3, white, #980090) */
+
+h3, h6, h4, p {
+  text-align: center;
+}
+
+.button {
+  text-align: center;
+}
+
+.well {
+  text-align: center;
+  border: 2px solid white;
+  margin: 20px;
+}
+
+body {
+  background: linear-gradient(white, #C89037);
+  /* background-color: #0F7185; */
+}
+
+#gradient {
+    height: 200px;
+    background-color: #cccccc;
+    background-image: radial-gradient(salmon, white);
+}
