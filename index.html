@@ -12,28 +12,30 @@
       <div class="jumbotron">
         <h2>Order a Pizza here:</h2>
       </div>
-      <form id="pizzaSelections">
-        <div class="form-group">
-          <div class="row">
-            <div class="col-md-6">
-          <label>Pizza size:</label>
-          <select class="form-control size">
-            <option value="small">Small</option>
-            <option value="large">Large</option>
-          </select>
+        <div class="row">
+         <form id="order-form">
+           <div class="col-md-6">
+             <h3>Pizza size:</h3>
+             <div class="radio">
+               <label for="small">Small</label>
+               <input name="size" type="radio" value="small">
+             </div>
+             <div class="radio">
+               <label for="large">Large</label>
+               <input name="size" type="radio" value="large">
+             </div>
             </div>
               <div class="pizzaToppings">
                 <div class="col-md-6">
                   <h4>Choose your toppings:</h4>
                   <label for="toppings">Olives</label>
-                  <input type="radio" value="0">
+                  <input type="radio" value="olives">
                   <label for="toppings">Pepperoni</label>
                   <input type="radio" value="pepperoni">
                   <label for="toppings">Green Peppers</label>
                   <input type="radio" value="greenpeppers">
                 </div>
             </div>
-          </div>
         </div>
         <br><button type="submit" class="btn btn-danger" id="button">Order:</button>
       </form>

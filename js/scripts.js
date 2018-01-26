@@ -6,18 +6,18 @@ function Pizza(toppings, size) {
 Pizza.prototype.price = function() {
   var cost = 10;
   if (this.size === "small") {
-    cost += 2 + (this.toppings.length);
+    cost -= 2;//+ (this.toppings.length);
   } else if (this.size === "large") {
-    cost += 5 + (this.toppings.length);
+    cost += 5; // + (this.toppings.length);
   }
     return cost;
 };
 
 $(document).ready(function() {
-  $("form#pizzaSelections").submit(function(event) {
+  $("form#order-form").submit(function(event) {
     event.preventDefault();
 
-    var sizeInput = $("select#pizzaSize").val();
+    var sizeInput = $("input[value=size]:checked").val();
     var toppingsInput = [];
     $("input:checked").each(function() {
       toppingsInput.push($(this).val());
