@@ -35,7 +35,7 @@ $(document).ready(function() {
     var newPizza = new Pizza(sizeInput, toppingsInput);
       console.log(newPizza)
 
-    $("ul#pizzaReciept").append("<li>$" + newPizza.price() + "</li>");
+    $("ul#pizzaReciept").append("<li>$" + newPizza.price() + ".00" + "</li>");
 
   });
 });
