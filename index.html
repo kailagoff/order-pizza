@@ -13,32 +13,32 @@
         <h2>Order a Pizza here:</h2>
       </div>
         <div class="row">
-         <form id="order-form">
-           <div class="col-md-6">
-             <h3>Pizza size:</h3>
-             <div class="radio">
-               <label for="small">Small</label>
-               <input name="size" type="radio" value="small">
-             </div>
-             <div class="radio">
-               <label for="large">Large</label>
-               <input name="size" type="radio" value="large">
-             </div>
-            </div>
-              <div class="pizzaToppings">
-                <div class="col-md-6">
-                  <h4>Choose your toppings:</h4>
-                  <label for="toppings">Olives</label>
-                  <input type="radio" value="olives">
-                  <label for="toppings">Pepperoni</label>
-                  <input type="radio" value="pepperoni">
-                  <label for="toppings">Green Peppers</label>
-                  <input type="radio" value="greenpeppers">
-                </div>
+
+      <form id="orderForm">
+       <div class="col-md-6">
+         <h3>Pizza size:</h3>
+         <select class="form-control"id="size">
+           <option value="small">Small</option>
+           <option value="Large">Large</option>
+         </select>
+       </div>
+
+          <div class="pizzaToppings">
+            <div class="col-md-6">
+              <h4>Choose your toppings:</h4>
+              <label for="toppings">Olives</label>
+              <input type="radio" value="olives">
+              <label for="toppings">Pepperoni</label>
+              <input type="radio" value="pepperoni">
+              <label for="toppings">Green Peppers</label>
+              <input type="radio" value="greenpeppers">
             </div>
         </div>
-        <br><button type="submit" class="btn btn-danger" id="button">Order:</button>
+        </div>
+        <br><button type="submit" class="btn btn-danger">Order:</button>
       </form>
+
+
       <div class="price">
         <div class="form-check">
           <br><h6>Order total cost:</h6>
