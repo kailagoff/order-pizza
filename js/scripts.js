@@ -7,15 +7,28 @@ Pizza.prototype.order = function() {
   return this.size + this.topping;
 }
 
-Pizza.prototype.cost = function() {
+Pizza.prototype.price = function() {
+  var cost = 10;
+  if (this.size === "small") {
+    cost = cost + 2;
+  } else if (this.size === "large") {
+    cost = cost + 5;
+  } else {
+    cost = cost
+  }
+    return cost;
+};
 
-}
+$(document).ready(function() {
+  $("form#pizzaSelections").submit(function(event) {
+    event.preventDefault();
 
-$(document).ready(function) {
-  $("#button").click(function() {
+    var sizeInput = $("select#pizzaSize").val();
 
+    var newPizza = new Pizza(sizeInput);
+      console.log("created new object")
 
+    $("ul#pizzaReciept").append("<li>$" + newPizza.price() + "</li>");
 
-    $("#pizzaReciept").append(pizza.order()).show();
-  })
-}
+  });
+});
