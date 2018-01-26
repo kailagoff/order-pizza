@@ -7,13 +7,13 @@ Pizza.prototype.price = function() {
   var cost = 10;
 
   if (this.size === "personal") {
-    cost -= 3
+    cost = cost - 3 + (this.toppings.length * 2);
   } else if (this.size === "small") {
-    cost -= 1
+    cost = cost - 1 + (this.toppings.length * 2);
   } else if (this.size === "medium") {
-    cost += 1
+    cost += 1 + (this.toppings.length * 2);
   } else if (this.size === "large") {
-    cost += 3
+    cost += 3 + (this.toppings.length * 2);
   } else {
     cost = cost
   }
