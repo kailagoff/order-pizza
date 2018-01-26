@@ -7,22 +7,29 @@ Pizza.prototype.price = function() {
   var cost = 10;
 
   if (this.size === "personal") {
-    cost = cost - 3 + (this.toppings.length * 2);
+    cost = cost - 3 + (this.toppings.length * 3);
   } else if (this.size === "small") {
-    cost = cost - 1 + (this.toppings.length * 2);
+    cost = cost - 1 + (this.toppings.length * 3);
   } else if (this.size === "medium") {
-    cost += 1 + (this.toppings.length * 2);
+    cost += 1 + (this.toppings.length * 3);
   } else if (this.size === "large") {
-    cost += 3 + (this.toppings.length * 2);
+    cost += 3 + (this.toppings.length * 3);
   } else {
     cost = cost
   }
     return cost;
 };
 
+var reset = function() {
+  $("select#size").val("");
+}
+
+
 $(document).ready(function() {
   $("form#orderForm").submit(function(event) {
     event.preventDefault();
+
+    // document.getElementById("olives").checked = false;
 
     var sizeInput = $("select#size").val();
     console.log($("select#size").val());
@@ -36,6 +43,8 @@ $(document).ready(function() {
       console.log(newPizza)
 
     $("ul#pizzaReciept").append("<li>$" + newPizza.price() + ".00" + "</li>");
+
+    reset();
 
   });
 });
