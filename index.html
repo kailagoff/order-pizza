@@ -16,18 +16,22 @@
         <div class="form-group">
           <div class="row">
             <div class="col-md-6">
-              <h4>Choose your size:</h4>
-              <select class="form-control" id="pizzaSize">
-                <option value="small">Small</option>
-                <option value="large">Large</option>
-              </select>
+          <label>Pizza size:</label>
+          <select class="form-control size">
+            <option value="small">Small</option>
+            <option value="large">Large</option>
+          </select>
             </div>
-            <div class="col-md-6">
-              <h4>Choose your toppings:</h4>
-              <label for="toppings">Cheese</label>
-              <input type="radio" id="toppings1">
-              <label for="toppings">Pepperoni</label>
-              <input type="radio" id="toppings2">
+              <div class="pizzaToppings">
+                <div class="col-md-6">
+                  <h4>Choose your toppings:</h4>
+                  <label for="toppings">Olives</label>
+                  <input type="radio" value="0">
+                  <label for="toppings">Pepperoni</label>
+                  <input type="radio" value="pepperoni">
+                  <label for="toppings">Green Peppers</label>
+                  <input type="radio" value="greenpeppers">
+                </div>
             </div>
           </div>
         </div>
