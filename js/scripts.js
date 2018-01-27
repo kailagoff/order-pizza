@@ -20,14 +20,11 @@ Pizza.prototype.price = function() {
     return cost;
 };
 
-
 $(document).ready(function() {
   $("form#orderForm").submit(function(event) {
     event.preventDefault();
 
-
     var sizeInput = $("select#size").val();
-    console.log($("select#size").val());
     var toppingsInput = [];
 
     $("input:checked").each(function() {
@@ -35,7 +32,6 @@ $(document).ready(function() {
     });
 
     var newPizza = new Pizza(sizeInput, toppingsInput);
-      console.log(newPizza)
 
     $("ul#pizzaReciept").append("<li>$" + newPizza.price() + ".00" + "</li>");
 
@@ -44,6 +40,5 @@ $(document).ready(function() {
     }
 
     reset();
-
   });
 });
