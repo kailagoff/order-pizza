@@ -20,17 +20,6 @@ Pizza.prototype.price = function() {
     return cost;
 };
 
-var reset = function() {
-  $("select#size").val("");
-  // $("input:checkbox").removeAttr("checked");
-  // $("input[type=checkbox]").attr("checked",false);
-}
-
-//
-// function clearRadio(radio) {
-//   var clear =
-// }
-
 
 $(document).ready(function() {
   $("form#orderForm").submit(function(event) {
@@ -49,6 +38,10 @@ $(document).ready(function() {
       console.log(newPizza)
 
     $("ul#pizzaReciept").append("<li>$" + newPizza.price() + ".00" + "</li>");
+
+    var reset = function() {
+      $("select#size").val("");
+    }
 
     reset();
 
