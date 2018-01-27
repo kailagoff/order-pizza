@@ -22,14 +22,20 @@ Pizza.prototype.price = function() {
 
 var reset = function() {
   $("select#size").val("");
+  // $("input:checkbox").removeAttr("checked");
+  // $("input[type=checkbox]").attr("checked",false);
 }
+
+//
+// function clearRadio(radio) {
+//   var clear =
+// }
 
 
 $(document).ready(function() {
   $("form#orderForm").submit(function(event) {
     event.preventDefault();
 
-    // document.getElementById("olives").checked = false;
 
     var sizeInput = $("select#size").val();
     console.log($("select#size").val());
