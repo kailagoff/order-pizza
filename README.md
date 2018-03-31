@@ -5,6 +5,9 @@
 
 Epicodus week four code review. A webpage that lets the user order a pizza by size and toppings. The webpage then displays the results of the order.
 
+<kbd><img src="img/screenshot.png" alt=""></kbd>
+<kbd><img src="img/screenshot1.png" alt=""></kbd>
+
 ## Specifications
   * User will select the size of the pizza
       Example Input - small
